@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Face Recognising Project</title>
+</head>
+<body>
+    <center>
+        <h1>Face Recogniser</h1>
+        <br>
+        <h5>The webpage can identify the following </h5>
+    </center>
+    <ul style="margin-left: 620px;">
+        <li>Brother</li>
+        <br>
+        <li>Sister</li>
+        <br>
+        <li>Mother</li>
+        <br>
+        <li>Father</li>
+    </ul>
+    <center>
+        <div id="camera" style="border: 2px dashed black;"></div>
+        <br>
+        <div id='result' style="border: 2px dashed black;" hidden></div>
+        <br>
+        <button id="btn_capture" onclick="capture_img()" class="btn btn-success">Capture Image</button>
+        <button id="btn_identify" onclick="identfy_img()" class="btn btn-danger">Identify Image</button>
+    </center>
+</body>
+</html>
