@@ -6,7 +6,6 @@ Webcam.set({
 });
 
 camera=document.getElementById('camera');
-
 Webcam.attach('#camera');
 
 function capture_img(){
@@ -15,3 +14,11 @@ function capture_img(){
     });
 }
 
+console.log('ml5 version=',ml5.version);
+
+//model link to be added
+classfier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/GpjatgLwS/model.json',modelloaded);
+
+function modelloaded() {
+    console.log("model loaded");
+}
